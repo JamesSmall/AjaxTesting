@@ -1,0 +1,24 @@
+<!doctype html>
+<article>
+	<h2>What is a stack?</h2>
+	<p>a Stack is a collection that is a first in, last out structure. a Stack effectively works like a stack of papers, where only the item added can be taken out first. when a stack is using a linked implementation it has a head pointer and only focuses on adding or removing from it. and when an array, it adds to the top most index and removes from the top most index. it should be noted that an array must be remade to fill more elements than it can contain</p>
+	<canvas class="interactAreaSmall" id="StackExample" onload="setupStack();" width=5000 height="2000"></canvas>
+	<label>Data</label>
+	<input type="text" id="stackInput"/>
+	<button type="button" onclick="stackAdd();">add</button>
+	<button type="button" onclick="stackRemove();">remove</button>
+</article>
+<article>
+	<h2>What is a queue?</h2>
+	<p>a Queue is a collection that is a first in, first out structure. a queue effectively works like a line, where the person who has waited the longest can only be remove first. when a linked implementation, the outer collection must maintain a header and a footer node to quickly access the first and last elements of the linked collection. and while an array it must maintain the position of the first and last element on the array, the queue is treated as a circular array (when the elements go above array.length, the position is aliased to (index%array.length)), it should be noted that an array must be remade to fill more elements than it can contains</p>
+	<canvas class="interactAreaSmall" id="QueueExample" onload="setupQueue();" width=5000 height="2000"></canvas>
+	<label>Data</label>
+	<input type="text" id="QueueInput"/>
+	<button type="button" onclick="queueAdd();">add</button>
+	<button type="button" onclick="queueRemove();">remove</button>
+</article>
+<article>
+	<h2>which is better?</h2>
+	<p>neither is better than the other, however, a Queue is best used when you are having a collection that holds a line of items to be processed, and a stack is best used when you are adding items to a stack and will pick up the last on you added first.</p>
+</article>
+<script src="StackVQueue.js"></script>

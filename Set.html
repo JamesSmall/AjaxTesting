@@ -1,0 +1,21 @@
+<!doctype html>
+<article>
+	<h2>What is a set?</h2>
+	<p>a set is a datastructure that is unordered (as in it does not maintain add,set and/and remove order) and generally cannot contain duplicates(although this isnt a restriction nessassarly). generally speaking it can be added to, removed from, iterated through, and has a contains method. below are two examples of a set, keep in mind others exist. a set can also be converted to a map structure, where the container value is a key to a mapped value (containing the pointer to the mapped value).</p>
+</article>
+<article>
+	<h2>HashSet</h2>
+	<img src="images/HashSet.png" alt="An image of a hashset" class="center"/>
+	<p>a hashset is a collection that is internally is a double list, the outerlist being a randomly accesed arraylist with a linkedlist beings the element of the arraylist, the outer arraylist is selected and gotten by a hash, the hash is an integer thats converted to a range between 0 and the outer array size. the inner LinkedList is to be searched through when looking or adding an item. hashsets are insert agnostic, meaning they do not care about insertion order. a hashset generally is designed to not support duplicates of items.</p>
+	</article>
+<article>
+	<h2>TreeSet</h2>
+	<img src="images/TreeSet.png" alt="An image of a TreeSet" class="center"/>
+	<a>a treeset is a collection ordered internally based off a comparison, a treeset node has up to two children nodes, the left node ussually compares to be less than the parent, and the right node ussually compares to be greater than the parent. a treeset can be used for a binarysearch if ordered correctly. a treeset can be designed to work with duplicates alot easier than a hashset</a>
+	
+</article>
+<article>
+	<h2>which is better?</h2>
+	<p>Short answer is neither collection is better than the other.</p>
+	<p>long answer, a hashset is a quick structure when setup with a proper dataload, to see if an item is contained or not. while a treeset is better at finding an item with a partiuclar property.</p>
+</article>

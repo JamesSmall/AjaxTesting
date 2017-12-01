@@ -1,0 +1,57 @@
+<!doctype html>
+<article>
+	<h2>What is an Array Implementation?</h2>
+	<img src="images/ArrayMemory.png" alt="picture of array in memory blocks" class="center"> </img>
+	<p>An array implementation is a data structure in memory that has all the memory together in a block, this block can be accessed directly and randomly from element[0] to element[element.length-1]. there is no extra time required to select an item from one point or another in the array. an array element has a restriction of size and you cannot have more elements into an array than the array can hold, in order to add more elements, you must recreate a new array and move the old values to it, this can often happen behind the scenes.</p>
+
+	<!-- advantages -->
+	<h3>Advantages</h3>
+	 <ul>
+	 	<li>Random Access</li>
+	 	<li>Memory is not fragmented (all data is together) </li>
+	 </ul>
+
+	 <!-- disadvantages -->
+	 <h3>Disadvantages</h3>
+	 <ul>
+	 	<li>Static Size</li>
+	 	<li>will have null index's in array when the array is not full, wasting potential memory space </li>
+	 </ul>
+	 <!-- when to use? -->
+	 <h3>when to use an array?</h3>
+	 <p>An array is best used when size is constant or pre-known with the data structure, an array is also preferred to be used in random access situations </p>
+</article>
+
+<article>
+	<h2>What is a linked Implementation?</h2>
+	<img src="images/LinkedMemory.png" alt="picture of linked nodes in memory blocks" class="center"> </img>
+	<p>a linked implementation is a data structure in memory that not have elements necessary side by side but rather has elements pointing to next or other elements, a linked implementation has usually a head node(s) are referenced from a more outside source and you must mine down through the links to find the desired elements. a linked implementation cannot be randomly accessed. a linked implementation has no software limit on its size, you can add or remove elements and since it is using links, it can keep adding elements as long as enough memory space in total exists for the amount of links. </p>
+	 
+	 <!-- advantages -->
+	 <h3>Advantages</h3>
+	 <ul>
+	 	<li>Dynamic Size</li>
+	 	<li>no wasted space from null elements</li>
+	 </ul>
+
+	 <!-- disadvantages -->
+	 <h3>Disadvantages</h3>
+	 <ul>
+	 	<li>Longer Access/Insert times the further away from head/first element(s)</li>
+	 	<li>memory is fragmented (it is in multiple locations), and each element(except last) has to point to the next one, taking more memory </li>
+	 </ul>
+	 <!-- when to use? -->
+	 <h3>when to use linked?</h3>
+	 <p>linked implementation is best used when the size is not known, and when random access is not required.</p>
+
+</article>
+<article>
+	<h2>which is better?</h2>
+	<p>short answer, neither is truly better than the other</p>
+	<p>long answer, the best one for the situation, often random access is far better with an array, but dynamic size is often better with linked.</p>
+
+	<h3>seperate situations</h3>
+	<p>stack and queues when are expected to be dynamic sizes would be a better to use a linked implementation. however, if memory is expected to be static, as in minimal changes, an array will usually be better (especially for stacks), keep in mind that overall, a linked implementation will use more memory and will be fragmented in memory while an array will have all data together and have only a pointer to its starting element. </p>
+	<h3>togeather situations</h3>
+	<p>you can also combined structures for building a structure with some of the benefits of both, (see <span onclick="setPage('Set.html');" class="link">set</span> for an example), these situations can randomly access a bag of links, and then iterate through those links to find the wanted element. you can also string together multiple arrays with links instead of building whole new arrays, although this does slow down random access, it may still be more valuable than rewriting an entire array. </p>
+</article>

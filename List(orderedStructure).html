@@ -1,0 +1,42 @@
+<!doctype html>
+
+<article>
+	<h2>What is a List?</h2>
+	<p>a list is an ordered collection data structure. a List can be either linked(called LinkedList) or array(called Array List) A list supports indexed insert with arrays, it will shift all elements behind the location being added, with linked, it will iterate through to correct index and insert a new element with the appropriate links for the expected order. A value can be reference or found at a predicted index, iterating through if linked list or accessing directly if array list. a list is guaranteed to have the list stay in a predictable, Iterable order. A list normally does not have implementation rules that stacks, sets, or queues normally have. the following example will not change it size, this is to represent that an array has a limited size </p>
+</article>
+
+<article>
+	<h2>ArrayList Implementation</h2>
+	<p>An Array List is one of the two primary subtypes of a list, the backing array of an array list may have limits but if the list implementation requires the size to surpass the limit, the implementation can create a new behind the scenes array and move all the old elements in order to the new array. an array list has random access .</p>
+	<canvas class="interactAreaSmall" id="ArrayListExample" onload="setupArrayList();" width=5000 height="2000"></canvas>
+	<!--buttons-->
+	<label>Index</label>
+	<input type="number" id="ALIndexInput"/>
+	<label>Data</label>
+	<input type="text" id="ALInput"/>
+	<button type="button" onclick="setToArrayList();">Set item</button>
+	<button type="button" onclick="removeFromArrayList();">Remove item</button>
+	<button type="button" onclick="addToArrayList();">Add item</button>
+	<button type="button" onclick="addToArrayListEnd();">Add item(At End)</button>
+	<!--<button type="button" onclick="moveToArrayList();">MoveIndexTo</button>-->
+
+</article>
+
+<article>
+	<h2>LinkedList Implementation</h2>
+	<p>A Linked List is one of the two primary subtypes of a list, a Linked List is has each element from a head element reference the next element, in order to find an element, you must iterate through the list, you cannot directly access any one element. because a linked list uses a link to get the next element, it has no software limit imposed on its size. </p>
+	<canvas class="interactAreaSmall" id="LinkedListExample" onload="setupLinkedList();" width=5000 height="2000"></canvas>
+	<!--buttons-->
+	<label>Index</label>
+	<input type="number" id="LLIndexInput"/>
+	<button type="button" onclick="moveToLinkedList();">MoveIndexTo</button>
+	<label>Data</label>
+	<input type="text" id="LLInput"/>
+	<button type="button" onclick="removeFromLinkedList();">Remove item</button>
+	<button type="button" onclick="setItemLinkedList();">Set Item</button>
+	<button type="button" onclick="addToLinkedList();">Add item</button> 
+	<button type="button" onclick="addToLinkedListEnd();">Add item(At End)</button>
+</article>
+
+<script src="List.js">
+</script>

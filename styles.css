@@ -1,0 +1,140 @@
+
+/*
+		super bright
+		#029bFF
+
+		dark
+		#001320
+*/
+body{
+	background-color: #000000;
+
+    width: 75%;
+}
+header, footer{
+	background-color: #3366BB;
+	padding: 3px;
+}
+main, .main{	
+	background-color: #66CCff;
+	padding: 3px;
+	display: block;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	background-color: #015180;
+    width: 100%;
+    display: flex;
+    font-size:24px;
+}
+nav li a {
+	/*float:left;*/
+    padding-left: 4px;
+    padding-right: 4px;
+	background-color: #01748f;
+   	border: 1px solid black;
+    cursor: pointer;
+   /* display: inline-block;
+    match parent*/
+    height:100%;
+    /*width:100%;*/
+}  
+nav li a:hover {
+	color: #fff;
+	background-color: #00aaff;
+}
+nav li a:active{
+	background-color: #0000ff;
+}
+p{
+	padding: 5px;
+	margin: 0;
+}
+h1{
+	color:#ffffff;
+}
+h2{
+	background-color: #2277aa;
+	padding: 5px;
+	margin: 0;
+	color:#FFDF66;
+}
+ul, ol{
+	padding-bottom: 4px;
+	margin-bottom: 0;
+	padding-top: 4px;
+	margin-top: 0;
+}
+h3{
+	padding: 0;
+	margin: 0;
+
+}
+img{
+	display: block;
+}
+.link{
+    text-decoration: underline;
+    color: #0000ff;
+    cursor: pointer;
+}
+.link:hover {
+	color:#00aaff;
+}
+
+.interactAreaSmall{
+	background-color: #000000;
+	width:100%;
+	padding: 0;
+	margin: 0;
+   	height: 300px;
+   	display: inline-block;
+}
+/*
+div .activeBlock{
+	background-color: #ff0000;
+    position: absolute;
+	width: 10%;
+	height: 10px;
+}
+div .inactiveBlock{
+	background-color: #770000;
+    position: absolute;
+	width: 50px;
+	height: 25px;
+
+}*/
+.error{
+	background-color: #ff0000;
+}
+.hidden{
+	width:0;
+	height:0;
+}
+.center{
+    margin: auto;
+}
+@media (max-width: 920px){
+	nav ul{
+		float: none;
+		display: inline-block;
+		width:100%;
+	}
+	nav li a{
+		display: inline-block;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+	}
+}
+@media (max-width: 1250px){
+	body{
+		margin:0;
+	}
+	body{
+		width: 100%;
+	}
+}
